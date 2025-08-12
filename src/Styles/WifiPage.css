@@ -1,0 +1,49 @@
+/* Main container styling */
+.wifi-info-container {
+  background-color: #0d0d0d; /* Full black background */
+  color: #e0e0e0; /* Light grey text for readability */
+  font-family: "Fira Code", monospace;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.4); /* Neon glow */
+}
+
+/* Preformatted text style */
+.wifi-info-pre {
+  background-color: #1a1a1a; /* Slightly lighter black for content area */
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: pre-wrap; /* Wrap text if needed */
+  line-height: 1.5;
+  border: 1px solid #00ffaa; /* Neon green border */
+}
+
+/* Highlight values dynamically */
+.wifi-info-pre span.value {
+  color: #00ffaa; /* Neon green values */
+  font-weight: bold;
+}
+
+/* Title / heading look */
+.dashboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ffaa;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #00ffaa;
+}
+
+/* Animation for changing numbers */
+@keyframes valueChange {
+  0% { color: #00ffaa; }
+  50% { color: #ffcc00; }
+  100% { color: #00ffaa; }
+}
+
+.value-changing {
+  animation: valueChange 0.8s ease-in-out;
+}

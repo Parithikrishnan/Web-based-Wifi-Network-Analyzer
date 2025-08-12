@@ -1,0 +1,11 @@
+:root {
+  --background-dark: #000000; --container-bg: #111111; --text-primary: #FFFFFF;
+  --text-secondary: #AAAAAA; --accent-blue: #00BFFF; --accent-hover: #1E90FF;
+  --font-main: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-main); background-color: var(--background-dark);
+  color: var(--text-primary); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after { box-sizing: border-box; }

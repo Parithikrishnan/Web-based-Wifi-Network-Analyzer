@@ -1,0 +1,104 @@
+/* src/Pages/DomainSummaryPage/DomainSummaryPage.css */
+
+.summary-page-container {
+    padding: 40px;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+}
+
+.summary-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.summary-page-header h1 {
+    font-size: 32px;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.back-button {
+    color: var(--text-primary);
+    background-color: #222;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-blue);
+}
+
+.table-container {
+    width: 100%;
+    background-color: var(--container-bg);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+}
+
+th, td {
+    padding: 15px 20px;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #333;
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+tbody tr:hover {
+    background-color: rgba(0, 191, 255, 0.05);
+}
+
+.domain-cell {
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.loading-text {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 50px;
+}
+
+.error-message {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border: 1px solid #ff4d4d;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}

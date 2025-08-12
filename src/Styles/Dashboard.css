@@ -1,0 +1,144 @@
+/* src/Styles/Dashboard.css */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+}
+
+/* --- GLOBAL HEADER AT THE TOP --- */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--container-bg);
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left h1 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.admin-info {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.admin-info strong {
+  color: var(--text-primary);
+}
+
+/* --- DROPDOWN NAVIGATION MENU --- */
+.nav-menu-container {
+  position: relative;
+}
+
+.nav-menu-button, .logout-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #222;
+  color: var(--text-primary);
+  border: 1px solid #444;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-menu-button:hover, .logout-button:hover {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-hover);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 220px;
+  background-color: var(--container-bg);
+  border-radius: 8px;
+  border: 1px solid #444;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.dropdown-menu a:hover {
+  background-color: var(--accent-blue);
+}
+
+/* --- PAGE-FILLING GRID CONTAINER --- */
+.grid-container {
+  flex-grow: 1;
+  display: grid;
+  padding: 50px;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* --- STYLING FOR EACH NAVIGATION CARD --- */
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-bg);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.grid-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+}
+
+.card-icon {
+  font-size: 48px;
+  color: var(--accent-blue);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: var(--text-primary);
+}
+
+.card-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

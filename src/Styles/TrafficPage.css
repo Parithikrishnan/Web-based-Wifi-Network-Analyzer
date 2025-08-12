@@ -1,0 +1,114 @@
+/* src/Pages/TrafficPage/TrafficPage.css */
+
+.page-container {
+    padding: 40px;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.back-button {
+    color: var(--text-primary);
+    background-color: #222;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-blue);
+}
+
+.explorer-layout {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; /* IP list is narrower */
+    gap: 30px;
+    height: calc(100vh - 180px); /* Fill remaining viewport height */
+}
+
+.explorer-panel {
+    background-color: var(--container-bg);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.explorer-panel h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+    color: var(--accent-blue);
+}
+
+.list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.placeholder-text {
+    color: var(--text-secondary);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.list-item-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.list-item-button:hover {
+    background-color: #222;
+}
+
+.list-item-button.active {
+    background-color: var(--accent-blue);
+    color: #fff;
+}
+
+.domain-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    border-bottom: 1px solid #333;
+}
+.domain-entry:last-child {
+    border-bottom: none;
+}
+.domain-name {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+.visit-count {
+    color: var(--text-secondary);
+    font-size: 14px;
+}

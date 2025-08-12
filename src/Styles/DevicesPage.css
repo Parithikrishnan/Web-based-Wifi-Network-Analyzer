@@ -1,0 +1,75 @@
+/* src/Pages/DevicesPage/DevicesPage.css */
+/* Using a generic page container for reusability */
+.page-container {
+    padding: 40px;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+.page-header h1 {
+    font-size: 32px;
+    color: var(--text-primary);
+    margin: 0;
+}
+.header-actions { display: flex; align-items: center; gap: 20px; }
+
+.scan-button, .back-button {
+    color: var(--text-primary);
+    background-color: #222;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.scan-button:hover, .back-button:hover {
+    background-color: var(--accent-blue);
+}
+.scan-button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    color: var(--text-secondary);
+}
+
+.table-container {
+    width: 100%;
+    background-color: var(--container-bg);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+thead tr {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+}
+th, td {
+    padding: 15px 20px;
+}
+tbody tr {
+    border-bottom: 1px solid #333;
+}
+tbody tr:last-child {
+    border-bottom: none;
+}
+tbody tr:hover {
+    background-color: rgba(0, 191, 255, 0.05);
+}
+.vendor-cell {
+    color: var(--accent-blue);
+    font-weight: 500;
+}

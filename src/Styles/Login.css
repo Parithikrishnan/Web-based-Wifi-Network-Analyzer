@@ -1,0 +1,88 @@
+/* src/Styles/Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  font-family: var(--font-main);
+  background-image: radial-gradient(circle at top, rgba(0, 191, 255, 0.05), transparent 40%);
+}
+
+.login-box {
+  padding: 40px;
+  background-color: var(--container-bg);
+  border-radius: 10px;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 420px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-header .logo {
+  width: 60px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 5px var(--accent-blue));
+}
+
+.login-header h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.input-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-group .input-field {
+  width: 100%;
+  padding: 14px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--text-primary);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group .input-field:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--accent-blue);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-button:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
